@@ -1,10 +1,2 @@
-<form>
-  <h2>
-    nova transferencia
-  </h2>
-
-<div>
-  <input id="valor" type="text">
-</div>
-
-</form>
+<app-nova-transferencia (aoTransferir)="transferir($event)" ></app-nova-transferencia>
+<app-extrato [transferencia]="transferencia"></app-extrato>
